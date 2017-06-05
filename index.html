@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p><img src="http://i.imgur.com/3MwMbQK.jpg" alt="Imgur"></p>
+
+<p>A comprehensive list of web development tools and resources that can help you be <strong>more productive, stay informed</strong>, and become a <strong>better developer</strong>. </p>
+
+<p><img src="https://img.shields.io/badge/TOP-100+-lightgray.svg" alt="TOP 100+"></p>
+
+<h2 id="toc_0">✨ Contents</h2>
+
+<ul>
+<li><a href="#javascript-libraries">Javascript Libraries</a></li>
+<li><a href="#front-end-frameworks">Front-end Frameworks</a></li>
+<li><a href="#web-application-frameworks">Web Application Frameworks</a></li>
+<li><a href="#task-runners-package-managers">Task Runners / Package Managers</a></li>
+<li><a href="#languages-platforms">Languages / Platforms</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#csspreprocessors">CSS Preprocessors</a></li>
+<li><a href="#text-editors-code-editors">Text Editors / Code Editors</a></li>
+<li><a href="#markdown-editors">Markdown Editors</a></li>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#git-clients">Git Clients / Services</a></li>
+<li><a href="#continous-integration">Continous Integration</a></li>
+<li><a href="#local-dev-environments">Local Dev Environments</a></li>
+<li><a href="#code-sharing">Code Sharing</a></li>
+<li><a href="#collaboration-tools">Collaboration Tools</a></li>
+<li><a href="#inspiration">Inspiration</a></li>
+<li><a href="#website-speed-test-tools">Website Speed Test Tools</a></li>
+<li><a href="#web-development-communities">Web Development Communities</a></li>
+<li><a href="#web-development-newsletters">Web Development Newsletters</a></li>
+<li><a href="#others">Other</a></li>
+</ul>
+
+<h2 id="toc_1">✨ <a name="javascript-libraries"></a>Javascript Libraries</h2>
+
+<p><img src="http://i.imgur.com/ExatNmZ.jpg" alt="Imgur"></p>
+
+<p>Javascript is one of the most popular programming languages on the web. A Javascript library is a library of pre-written Javascript which allows easier access throughout the development of your website or application.</p>
+
+<ul>
+<li><a href="https://threejs.org/">Three.js</a>  : A easy to use, lightweight, 3D library.</li>
+<li><a href="https://jquery.com/">jQuery</a> : A fast, small, and feature-rich JavaScript library.
+
+<ul>
+<li><a href="https://jqueryui.com/">jQuery UI</a>    : A curated set of user interface interactions, effects, widgets, and themes.</li>
+<li><a href="https://jquerymobile.com/">jQuery Mobile</a>    : HTML5-based user interface system designed to make responsive web sites.</li>
+</ul></li>
+<li><a href="https://preactjs.com/">Preact</a> : Fast 3kB alternative to React, with the same ES2015 API.</li>
+<li><a href="http://backbonejs.org/">BackBoneJS</a>  : Give your JS app some backbone with models, views, collections, &amp; events.</li>
+<li><a href="https://d3js.org/">D3.js</a>    : A JavaScript library for manipulating documents based on data.</li>
+<li><a href="https://facebook.github.io/react/">React</a>    : Facebook’s Javascript library developed for building user interfaces.
+
+<ul>
+<li><a href="https://draftjs.org/">DraftJS</a> : A React framework for building text editors</li>
+</ul></li>
+<li><a href="https://prepack.io/">Prepack</a>    : It is a tool that optimizes JavaScript source code: Computations that can be done at compile-time instead of run-time get eliminated.</li>
+<li><a href="http://underscorejs.org/">Underscore.js</a> : Functional programming helpers without extending any built-in objects.</li>
+<li><a href="https://momentjs.com/">Moment.js</a>    : Parse, validate, manipulate, and display dates in JavaScript.</li>
+<li><a href="https://lodash.com/">Lodash</a> : A modern utility library delivering modularity, performance, &amp; extras.</li>
+<li><a href="http://riotjs.com/">Riot JS</a> : A React alternative that gives access to a virtual DOM but much easier to control with simpler syntax requirements</li>
+</ul>
+
+<blockquote>
+<p>For all javascript libraries : <a href="https://www.javascripting.com/">Javascripting.com </a></p>
+</blockquote>
+
+<h2 id="toc_2">✨ <a name="front-end-frameworks"></a>Front-end Frameworks</h2>
+
+<p><img src="http://i.imgur.com/iMcgEiq.jpg" alt="Imgur"></p>
+
+<p>Front-end frameworks usually consist of a package that is made up of other files and folders, such as HTML, CSS, JavasScript, etc. There are also many stand-alone frameworks out there. We are a big fan of Boostrap and the main KeyCDN website is built on it. A solid framework can be an essential tool for front-end developers</p>
+
+<ul>
+<li><a href="https://getbootstrap.com/">Bootstrap</a>    : HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+<li><a href="http://foundation.zurb.com/">Foundation</a> : Family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</li>
+<li><a href="https://semantic-ui.com/">Semantic UI</a>   : Development framework that helps create beautiful, responsive layouts using human-friendly HTML.</li>
+<li><a href="https://getuikit.com/">uikit</a>    : A lightweight and modular front-end framework for developing fast and powerful web interfaces.</li>
+<li><a href="http://materializecss.com/">Materialize</a> : A modern responsive CSS framework based on Material Design by Google.</li>
+<li><a href="https://purecss.io/">Pure</a>   : A set of small, responsive CSS modules that you can use in every web project.</li>
+<li><a href="http://milligram.io/">Milligram</a> : It provides a minimal setup of styles for a fast and clean starting point.</li>
+</ul>
+
+<h2 id="toc_3">✨ <a name="web-application-frameworks"></a>Web Application Frameworks</h2>
+
+<p><img src="http://i.imgur.com/asjRunr.jpg" alt="Imgur"></p>
+
+<p>A web framework (WF) or web application framework (WAF) is a software framework that is designed to support the development of web applications including web services, web resources, and web APIs. Web frameworks, provide a standard way to build and deploy web applications. Web frameworks aim to automate the overhead associated with common activities performed in web development.</p>
+
+<ul>
+<li><a href="https://vuejs.org/">VueJS</a>   : Vue.js is an open-source progressive JavaScript framework for building user interfaces.</li>
+<li><a href="https://www.ruby-lang.org/en/">Ruby</a> : Ruby on Rails is a web-application framework that includes everything needed to create database-backed web applications, with the MVC pattern.</li>
+<li><a href="https://angularjs.org/">AngularJS</a>   : Lets you extend HTML vocabulary for your web application. AngularJS is a framework, even though it’s much more lightweight and sometime referred to as a library.</li>
+<li><a href="https://www.emberjs.com/">Ember.js</a>  : A framework for creating ambitious web applications.</li>
+<li><a href="https://expressjs.com/">Express</a> : Fast and minimalist web framework for Node.js.</li>
+<li><a href="https://www.meteor.com/">Meteor</a> : Full-stack JavaScript app platform that assembles all the pieces you need to build modern web and mobile apps, with a single JavaScript codebase.</li>
+<li><a href="https://www.djangoproject.com/">Django</a>  : High-level Python Web framework that encourages rapid development and clean, pragmatic design.</li>
+<li><a href="https://laravel.com/">Laravel</a>   : A free, open-source PHP web application framework to build web applications on MVC pattern.</li>
+<li><a href="https://framework.zend.com/">Zend Framework 2</a>   : An open source framework for developing web applications and services using PHP.</li>
+<li><a href="https://phalconphp.com/en/">Phalcon</a> : A full-stack PHP framework delivered as a C-extension.</li>
+<li><a href="https://symfony.com/">Symfony</a>   : A set of reusable PHP components and a web application framework.</li>
+<li><a href="https://cakephp.org/">CakePHP</a>   : A popular PHP framework that makes building web applications simpler, faster and require less code.</li>
+<li><a href="http://flask.pocoo.org/">Flask</a>  : A microframework for Python based on Werkzeug and Jinja 2.</li>
+<li><a href="https://www.codeigniter.com/">CodeIgniter</a>   : Powerful and lightweight PHP framework built for developers who need a simple and elegant toolkit to create full-featured web applications.</li>
+</ul>
+
+<h2 id="toc_4">✨ <a name="task-runners-package-managers"></a>Task Runners / Package Managers</h2>
+
+<p><img src="http://i.imgur.com/U2DaRsR.jpg" alt="Imgur"></p>
+
+<p>Tasks runners are all about automating your workflow. For example you can create a task and automate the minification of JavaScript. Then build and combine tasks to speed up development time. Package managers keep track of all the packages you use and make sure they are up to date and the specific version that you need.</p>
+
+<ul>
+<li><a href="https://gruntjs.com/">Grunt</a> : JavaScript task runner all about automation.</li>
+<li><a href="http://gulpjs.com/">Gulp</a>    : Keeps things simple and makes complex tasks manageable, while automating and enhancing your workflow.</li>
+<li><a href="https://www.npmjs.com/">Npm</a> : Pack manager for JavaScript.</li>
+<li><a href="https://bower.io/">Bower</a>    : A web package manager. Manage components that contain HTML, CSS, JavaScript, fonts or even image files.</li>
+<li><a href="https://webpack.github.io/">Webpack</a> : A module bundler for modern JavaScript applications.</li>
+<li><a href="https://yarnpkg.com/en/">Yarn</a> : Fast, reliable, and secure dependency management.</li>
+</ul>
+
+<h2 id="toc_5">✨ <a name="languages-platforms"></a>Languages / Platforms</h2>
+
+<p><img src="http://i.imgur.com/Aqh47dC.jpg" alt="Imgur"></p>
+
+<p>Behind all the web development tools is a language. A programming language is a formal constructed language designed to communicate with a computer and create programs in which you can control the behavior. And yes we realize some of these might not always be referred to as a language.</p>
+
+<ul>
+<li><a href="https://secure.php.net/">PHP</a>    : Popular general-purpose scripting language that is especially suited to web development.</li>
+<li><a href="https://nodejs.org/en/">NodeJS</a>  : Event-driven I/O server-side JavaScript environment based on V8.</li>
+<li><a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>    : Programming language of HTML and the web.</li>
+<li><a href="https://www.w3.org/TR/html5/">HTML5</a> : Markup language, the latest version of HTML and XHTML.</li>
+<li><a href="https://www.python.org/">Python</a> : Programming language that lets you work quickly and integrate systems more effectively.</li>
+<li><a href="https://www.ruby-lang.org/en/">Ruby</a> : A dynamic, open source programming language with a focus on simplicity and productivity.</li>
+<li><a href="http://www.scala-lang.org/">Scala</a>   : Scala is a pure-bred object-oriented language allowing a gradual, easy migration to a more functional style.</li>
+<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3">CSS3</a>    : Latest version of cascading style sheets used in front-end development of sites and applications.</li>
+<li><a href="https://golang.org/">Golang</a> : Open source programming language that makes it easy to build simple, reliable, and efficient software.</li>
+<li><a href="https://www.rust-lang.org/en-US/">Rust</a>  : Systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.</li>
+<li><a href="https://elixir-lang.org/">Elixir</a>    : Dynamic, functional language designed for building scalable and maintainable applications.</li>
+</ul>
+
+<h2 id="toc_6">✨ <a name="databases"></a>Databases</h2>
+
+<p><img src="http://i.imgur.com/8s0AedE.jpg" alt="Imgur"></p>
+
+<p>A database is a collection of information that is stored so that it can be retrieved, managed and updated.</p>
+
+<ul>
+<li><a href="https://www.mysql.com/">MySQL</a>   : One of the world’s most popular open source databases.</li>
+<li><a href="https://mariadb.com/">MariaDB</a>   : Made by the original developers of MySQL. MariaDB is also becoming very popular as an open source database server.</li>
+<li><a href="https://www.mongodb.com/">MongoDB</a>   : Next-generation database that lets you create applications never before possible.</li>
+<li><a href="https://www.rethinkdb.com/">RethinkDB</a> : RethinkDB pushes JSON to your apps in realtime. When your app polls for data, it becomes slow, unscalable, and cumbersome to maintain.</li>
+<li><a href="https://redis.io/">Redis</a>    : An open source, in-memory data structure store, used as database, cache and message broker.</li>
+<li><a href="https://www.postgresql.org/">PostgreSQL</a> : A powerful, open source object-relational database system.</li>
+</ul>
+
+<h2 id="toc_7">✨ <a name="csspreprocessors"></a>CSS Preprocessors</h2>
+
+<p><img src="http://i.imgur.com/PdWc0O7.jpg" alt="Imgur"></p>
+
+<p>A CSS preprocessor is basically a scripting language that extends CSS and then compiles it into regular CSS. Make sure to also check out or in-depth post on Sass vs Less.</p>
+
+<ul>
+<li><a href="http://sass-lang.com/">Sass</a> : A very mature, stable, and powerful professional grade CSS extension.</li>
+<li><a href="http://lesscss.org/">Less</a>   : As an extension to CSS that is also backwards compatible with CSS. This makes learning Less a breeze, and if in doubt, lets you fall back to vanilla CSS.</li>
+<li><a href="http://stylus-lang.com/">Stylus</a> : A new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style.</li>
+<li><a href="http://postcss.org/">PostCSS</a>    : postcss-use allows you to explicitly set PostCSS plugins within CSS and execute them only for the current file</li>
+<li><a href="https://github.com/reworkcss/rework">ReworkCSS</a>  : Plugin framework for CSS preprocessing in Node.js</li>
+</ul>
+
+<h2 id="toc_8">✨ <a name="text-editors-code-editors"></a>Text Editors / Code Editors</h2>
+
+<p><img src="http://i.imgur.com/jxj3hzE.jpg" alt="Imgur"></p>
+
+<p>Whether you’re taking notes, coding, or writing markdown, a good text editor is a part of our daily lives!</p>
+
+<ul>
+<li><a href="https://atom.io/">Atom</a>  : A text editor that’s modern, approachable, yet hackable to the core. One of our favorites!</li>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a>  : A sophisticated text editor for code, markup and prose with great performance.</li>
+<li><a href="https://notepad-plus-plus.org/">Notepad++</a>   : A free source code editor which supports several programming languages running under the MS Windows environment.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code Beta</a> : Code editing redefined and optimized for building and debugging modern web and cloud applications.</li>
+<li><a href="https://macromates.com/">TextMate</a>   : A code and markup editor for OS X.</li>
+<li><a href="https://panic.com/coda/">Coda 2</a> : A fast, clean, and powerful text editor for OS X.</li>
+<li><a href="https://www.jetbrains.com/webstorm/">WebStorm</a>   : Lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js.</li>
+<li><a href="http://www.vim.org/">Vim</a>    : A highly configurable text editor built to enable efficient text editing.</li>
+<li><a href="http://brackets.io/">Brackets</a>   : A lightweight and powerful modern text editor; written in JavaScript, HTML and CSS.</li>
+<li><a href="https://www.gnu.org/software/emacs/">Emacs</a>  : An extensible, customizable text editor with built-in functions to aid in quick modifications of text and code.</li>
+</ul>
+
+<h2 id="toc_9">✨ <a name="markdown-editors"></a>Markdown Editors</h2>
+
+<p><img src="http://i.imgur.com/Z0hxrgn.jpg" alt="Imgur"></p>
+
+<p>Markdown is a markup language in plain text using an easy syntax that can then be converted to HTML on the fly. Note: This is different than a WYSIWYG editor. Markdown editors are sometimes referred to as the in-between WYSIWYG and simply writing code.</p>
+
+<ul>
+<li><a href="https://stackedit.io/">StackEdit</a>    : A free online rich markdown editor.</li>
+<li><a href="http://dillinger.io/">Dillinger</a> : An online cloud-enabled, HTML5, buzzword-filled Markdown editor.</li>
+<li><a href="http://25.io/mou/">Mou</a>  : Markdown editor for developers on Mac OS X.</li>
+<li><a href="http://www.texts.io/">Texts</a> : A rich editor for plain text. Windows and Mac OS X.</li>
+<li><a href="https://macdown.uranusjr.com/">Macdown</a> : MacDown is an open source Markdown editor for macOS.</li>
+</ul>
+
+<p>Some of the text editors we mentioned above also support markdown. For example, there is a <a href="https://atom.io/packages/markdown-preview">markdown preview package</a> for atom.</p>
+
+<h2 id="toc_10">✨ <a name="icons"></a>Icons</h2>
+
+<p><img src="http://i.imgur.com/Jz2TmEJ.jpg" alt="Imgur"></p>
+
+<p>Almost every web developer, especially front-end developers will at some point or another need icons for their project.</p>
+
+<ul>
+<li><a href="http://fontawesome.io/">Font Awesome</a>    : Scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</li>
+<li><a href="http://www.flaticon.com/">Flaticons</a> : Free thousands of vector icons in SVG, PSD, PNG, EPS and Icon Font.</li>
+<li><a href="https://thenounproject.com/">Noun Project</a>   : Nearly a million curated icons, created by a global community</li>
+<li><a href="https://iconmonstr.com/">IconMonster</a>    : A free, high quality, monstrously big and continuously growing source of simple icons. One of our favorites!</li>
+<li><a href="https://icons8.com/">Icons8</a> : An extensive list of highly customizable icons created by a single design team.</li>
+<li><a href="http://flaticons.net/">Flat Icons</a>   : It is a free flat icon maker. You can create your own royalty free flat icons for your web-projects within seconds.</li>
+<li><a href="https://www.iconfinder.com/">IconFinder</a> : Iconfinder provides beautiful icons to millions of designers and developers.</li>
+<li><a href="http://fontello.com/">Fontello</a>  : Tool to build custom fonts with icons.</li>
+</ul>
+
+<h2 id="toc_11">✨ <a name="git-clients"></a>Git Clients / Services</h2>
+
+<p><img src="http://i.imgur.com/UgE2fUR.jpg" alt="Imgur"></p>
+
+<p>Git is a source code management system for software and web development known for distributed revision control. When working with teams, using a git client to push code changes from dev to production is a way to maintain the chaos and ensure things are tested so they don’t break your live web application or site.</p>
+
+<ul>
+<li><a href="https://www.sourcetreeapp.com/">SourceTree</a>  : A free Git &amp; Mercurial client for Windows or Mac. Atlassian also makes a pretty cool team Git client called Bitbucket.</li>
+<li><a href="https://www.gitkraken.com/">GitKraken (Beta)</a>    :  A free, intuitive, fast, and beautiful cross-platform Git client.</li>
+<li><a href="https://www.git-tower.com/">Tower 2</a> : Version control with Git – made easy. In a beautiful, efficient, and powerful app.</li>
+<li><a href="https://desktop.github.com/">GitHub Client</a>  : A seamless way to contribute to projects on GitHub and GitHub Enterprise.</li>
+<li><a href="https://gogs.io/">Gogs</a>  : A painless self-hosted Git service based on the Go language.</li>
+<li><a href="https://git-fork.com/">Fork</a> : A fast and friendly Git client for Mac.</li>
+<li><a href="https://about.gitlab.com/">GitLab</a>   : Host your private and public software projects for free.</li>
+<li><a href="https://bitbucket.org/">BitBucket</a>   : Bitbucket is a web-based hosting service that is owned by Atlassian, used for source code and development projects.</li>
+<li><a href="http://gitup.co/">Gitup</a> : Work quickly, safely, and without headaches.</li>
+</ul>
+
+<h2 id="toc_12">✨ <a name="continous-integration"></a>Continous Integration</h2>
+
+<p><img src="http://i.imgur.com/4jWG9am.jpg" alt="Imgur"></p>
+
+<p>Choosing the right CI tool for your purposes can be a bit bothersome, especially if you want to start using them for the first time, so I hope this list will provide you with the quick and easy preview of the features and possibilities of some of the most used continuous integration tools on the market.</p>
+
+<ul>
+<li><a href="https://jenkins.io/">Jenkins</a>    : Jenkins is an open source CI tool written in Java. Jenkins is cross-platform tool and it offers configuration both through GUI interface and console commands.</li>
+<li><a href="https://travis-ci.org/">Travis CI</a> : Travis is an open source service free for all open source projects hosted on the GitHub. Since it is hosted, it does not depend on any platform. It is configured using .travis.yml files which contain the information to do.</li>
+<li><a href="https://about.gitlab.com/features/gitlab-ci-cd/">GitLab CI</a> : GitLab CI is an integral part of the open source Rails project GitLab. GitLab CI is fully integrated with GitLab and it can easily hook projects using the GitLab API.</li>
+<li><a href="https://circleci.com">CircleCI</a> : Rapidly release code with confidence on CircleCI&#39;s modern continuous integration and delivery platform.</li>
+</ul>
+
+<h2 id="toc_13">✨ <a name="local-dev-environments"></a>Local Dev Environments</h2>
+
+<p><img src="http://i.imgur.com/DWUpft8.jpg" alt="Imgur"></p>
+
+<p>Depending upon what OS you are running or the computer you currently have access to, it might be necessary to launch a quick local dev environment. There are a lot of free utilities that bundle Apache, mySQL, phpmyAdmin, etc. all together. This can be a quick way to test something on your local machine. A lot of them even have portable versions.</p>
+
+<ul>
+<li><a href="https://www.apachefriends.org/index.html">XAMPP</a> : Completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl.</li>
+<li><a href="https://www.mamp.info/en/">MAMP</a> : Local server environment in a matter of seconds on OS X or Windows.</li>
+<li><a href="http://www.wampserver.com/en/">WampServer</a>   : Windows web development environment. It allows you to create web applications with Apache2, PHP and a MySQL database.</li>
+<li><a href="https://www.vagrantup.com/">Vagrant</a> : Create and configure lightweight, reproducible, and portable development environments.</li>
+<li><a href="https://laragon.org/">Laragon</a>   : A great fast and easy way to create an isolated dev environment on Windows. Includes Mysql, PHP Memcached, Redis, Apache, and awesome for working with your Laravel projects.</li>
+</ul>
+
+<h2 id="toc_14">✨ <a name="code-sharing"></a>Code Sharing / Experimenting</h2>
+
+<p><img src="http://i.imgur.com/drKRSio.jpg" alt="Imgur"></p>
+
+<p>There is always that time when you are on Skype or Google hangout with another developer and you want him or her to take a quick look at your code. There are great team tools for sharing code like Slack, but if they aren’t a member of your team there are some great quick alternatives. Remember not to share anything secure.</p>
+
+<ul>
+<li><a href="">JS Bin</a>:  Tool for experimenting with web languages. In particular HTML, CSS and JavaScript, Markdown, Jade and Sass.</li>
+<li><a href="">JSfiddle</a>: Custom environment to test your JavaScript, HTML, and CSS code right inside your browser.</li>
+<li><a href="https://gist.github.com/">Gist</a> : Instantly share code, notes, and snippets.</li>
+<li><a href="">codeshare</a>: Share code in real-time with other developers.</li>
+<li><a href="http://dabblet.com/">Dabblet</a>: Interactive playground for quickly testing snippets of CSS and HTML code.</li>
+<li><a href="https://codepen.io/">Codepen</a> : CodePen is a social development environment for front-end designers and developers.. It&#39;s the best place to build and deploy a website, show off your work.</li>
+</ul>
+
+<h2 id="toc_15">✨ <a name="collaboration-tools"></a>Collaboration Tools</h2>
+
+<p><img src="http://i.imgur.com/fXrftUu.jpg" alt="Imgur"></p>
+
+<p>Every great development team needs a way to stay in touch, collaborate, and be productive. A lot of teams work remotely now. The team at KeyCDN is actually spread across many different continents. Tools like these below can help employees streamline their development workflow.</p>
+
+<ul>
+<li><a href="https://slack.com/">Slack</a>   : Messaging app for teams that is on a mission to make your working life simpler, more pleasant, and more productive. One of our favorites, we use this at KeyCDN!</li>
+<li><a href="https://trello.com/">Trello</a> :  Flexible and visual way to organize anything with anyone. We also use this as KeyCDN.</li>
+<li><a href="https://glip.com/">Glip</a> : Real-time messaging with integrated task management, video conferencing, shared calendars and more.</li>
+<li><a href="https://asana.com/">Asana</a>   : Team collaboration tool for teams to track their work and results.</li>
+<li><a href="https://www.atlassian.com/software/jira">Jira</a>   : Built for every member of your software team to plan, track, and release great software or web applications.</li>
+</ul>
+
+<h2 id="toc_16">✨ <a name="inspiration"></a>Inspiration</h2>
+
+<p><img src="http://i.imgur.com/3FOTAB8.jpg" alt="Imgur"></p>
+
+<p>We all need inspiration at some point or another. For front-end developers especially, from time to time, it can be beneficial to check out what other people are doing. This can be a great source of inspiration, new ideas, and making sure your web application or site doesn’t fall behind the times.</p>
+
+<ul>
+<li><a href="https://codepen.io/">CodePen</a>    : Show off your latest creation and get feedback. Build a test case for that pesky bug. Find example design patterns and inspiration for your projects.</li>
+<li><a href="https://dribbble.com/">Dribbble</a> : A community of designers sharing screenshots of their work, process, and projects.</li>
+<li><a href="https://muz.li/">Muzli</a>  : Designers&#39; Secret Source: all the design inspiration you need.</li>
+<li><a href="http://collectui.com/">Collect UI</a>   : Daily inspiration collected from daily ui archive and beyond</li>
+</ul>
+
+<h2 id="toc_17">✨ <a name="website-speed-test-tools"></a>Website Speed Test Tools</h2>
+
+<p><img src="http://i.imgur.com/yjHIP41.jpg" alt="Imgur"></p>
+
+<p>The speed of a website can be a critical factor to its success. Faster loading websites can benefit from higher SEO rankings, higher conversion rates, lower bounce rates, and a better overall user experience and engagement. It is important to take advantage of the many free tools available for testing website speed.</p>
+
+<ul>
+<li><a href="https://tools.keycdn.com/speed">Website Speed Test</a>  :  A page speed test developed by KeyCDN that includes a waterfall breakdown and the website preview.</li>
+<li><a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a>  : PageSpeed Insights analyzes the content of a web page, then generates suggestions to make that page faster.</li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en">Google Chrome DevTools</a>  : Set of web authoring and debugging tools built into Google Chrome.</li>
+<li><a href="https://www.webpagetest.org/">WebPageTest</a>   : Run a free website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds.</li>
+<li><a href="https://tools.pingdom.com/">Pingdom</a> : Test the load time of that page, analyze it and find bottlenecks.</li>
+<li><p><a href="https://gtmetrix.com/">GTmetrix</a> : Gives you insight on how well your site loads and provides actionable recommendations on how to optimize it.</p>
+
+<p>You can see a more in-depth list on our post about website speed test tools.</p></li>
+</ul>
+
+<h2 id="toc_18">✨ <a name="web-development-communities"></a>Web Development Communities</h2>
+
+<p><img src="http://i.imgur.com/CJ7XDWA.jpg" alt="Imgur"></p>
+
+<p>Every web developer has been there. They have a problem and what do they do? Well, they go to Google to find a quick answer. The web offers so much content right at our fingertips that it makes it easy to diagnose and troubleshoot problems when they arise. Check out a few good web development communities below.</p>
+
+<ul>
+<li><a href="https://stackoverflow.com/">Stack Overflow</a>: Community of 4.7 million programmers, just like you, helping each other.</li>
+<li><a href="https://frontendfront.com/">Front-end Front</a>: A place where front-end developers can ask questions, share interesting links, and show their work to the rest of the community.</li>
+<li><a href="https://hashnode.com/">Hashnode</a>: Global community for software developers to connect and learn programming from each other.</li>
+<li><a href="https://refind.com/">Refind</a>: Community of founders, hackers, and designers who collect and share the best links on the web.</li>
+<li><a href="https://plus.google.com/u/0/communities/114175980151299757659">Google+ Web Developers Group</a>: Web developers, web designers, and web coding.</li>
+<li><a href="https://plus.google.com/communities/114947356043496560984">Google+ Web Developers Group</a>: Java, PHP, Ruby, JavaScript and Python Resources</li>
+<li><a href="https://www.facebook.com/groups/wpfrontenddevs/">Facebook WordPress Front-end Developers Group</a>: WordPress Front End Developers is a group for devs to ask questions, share their work, discuss emerging trends, and collaborate.</li>
+<li><a href="https://www.linkedin.com/groups/139851/profile">LinkedIn Web Design and Development Professionals Group</a>: Networking and information sharing resource for professional Web Designers, Web Developers and Web Masters.</li>
+<li><a href="https://www.linkedin.com/groups/2192521/profile">LinkedIn Web Site Development Group</a>: Website design &amp; programming.</li>
+<li><a href="https://www.linkedin.com/groups/2195403/profile">LinkedIn PHP Developer Group</a>: PHP, Mysql, Drupal, Joomla, Zend, Cake, MVC.</li>
+<li><a href="https://www.linkedin.com/groups/3722491/profile">LinkedIn WordPress Developers Group</a>: WordPress Codex. Using WP as CMS and CMF.</li>
+<li><a href="http://www.webdeveloper.com/forum/">Webdeveloper.com</a>: Where web developers and designers learn how to build web sites, program in HTML, Java and JavaScript.</li>
+<li><a href="https://www.sitepoint.com/community/">Sitepoint Forums</a>: Web development discussion.</li>
+<li><a href="https://www.reddit.com/r/perfmatters/">/r/perfmatters</a>: The #1 subreddit about web performance and web development.</li>
+<li><a href="https://www.reddit.com/r/webdev/">/r/webdev</a>: What’s new for web developers.</li>
+</ul>
+
+<h2 id="toc_19">✨ <a name="web-development-newsletters"></a>Web Development Newsletters</h2>
+
+<p><img src="http://i.imgur.com/uTTU3db.jpg" alt="Imgur"></p>
+
+<p>The last thing you probably need is another newsletter subscription. But these guys handpick some of the best web development and performance topics from around the web so you don’t have to!</p>
+
+<ul>
+<li><a href="https://www.sitepoint.com/versioning/">Versioning</a> : SitePoint&#39;s daily newsletter. Informative, kinda funny, free.</li>
+<li><a href="https://wdrl.info/">wdrl.info</a>: A handcrafted, carefully selected list of web development related resources. Curated and published usually every week.</li>
+<li><a href="https://webopsweekly.com/">webopsweekly.com</a>: A weekly newsletter for Web developers focusing on web operations, infrastructure, deployment of apps, performance, and tooling, from the browser down to the metal.</li>
+<li><a href="http://webtoolsweekly.com/">web tools weekly</a>: A front-end development and web design newsletter with a focus on tools. Each issue features a brief tip or tutorial, followed by a weekly round-up of various apps, scripts, plugins, and other resources.</li>
+<li><a href="https://freshbrewed.co/">freshbrewed.co</a>: A weekly reading digest for front-end developers and UX designers.</li>
+<li><a href="https://www.smashingmagazine.com/">smashingmagazine.com</a>: Smashing Magazine is an online magazine for professional web designers and developers. Useful tips and valuable resources, sent out every second Tuesday.</li>
+<li><a href="http://frontenddevweekly.com/">front-end dev weekly</a>: Front-end developer news, tools and inspiration hand-picked every week.</li>
+<li><a href="http://fridayfrontend.com/">friday front-end</a>: Front-end development links tweeted daily, emailed weekly.</li>
+<li><a href="https://umaar.com/dev-tips/">/dev tips</a>: Receive a developer tip, in the form of a gif, in your inbox each week.</li>
+</ul>
+
+<h2 id="toc_20">✨ <a name="others"></a>Other Awesome tools list :</h2>
+
+<p><img src="http://i.imgur.com/PGU5smH.jpg" alt="Imgur"></p>
+
+<ul>
+<li>Terminal tools :
+
+<ul>
+<li><a href="https://github.com/supnate/command-pad">Command Pad</a> : A handy GUI tool for running command line tasks</li>
+<li><a href="https://www.iterm2.com/">iTerm 2</a> : Terminal emulator or macOS that does amazing things.</li>
+<li><a href="http://ohmyz.sh/">Oh my Zsh</a> : Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration</li>
+<li><a href="https://github.com/railsware/upterm">Upterm</a> : Upterm is an IDE in the world of terminals. Strictly speaking, it&#39;s both a terminal emulator and an interactive shell based on Electron</li>
+<li><a href="https://hyper.is/">Hyper</a> : A terminal built on web technologies.</li>
+</ul></li>
+<li><a href="https://www.getpostman.com/">Postman</a> : Postman is the complete toolchain for API developers.</li>
+<li><a href="https://robomongo.org/">Robomongo</a> : Native and cross-platform MongoDB management tool (Admin UI).</li>
+<li><a href="https://gitter.im/">Gitter</a> : An instant messaging and chat room system for developers as well as GitHub users. Developer friendly with Markdown syntax support.</li>
+</ul>
+
+<h1 id="toc_21"><a href="https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md">Contributing</a></h1>
+
+<p>Hi there, good to see you here! Let&#39;s collect some awesome tools and resources together 👋 🙂</p>
+
+<ol>
+<li>Edit the README.md</li>
+<li>Add your tool or resource</li>
+<li>Submit a pull request</li>
+</ol>
+
+<h2 id="toc_22">Licence</h2>
+
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0 Public Domain"></a></p>
+
+
+
+
+</body>
+
+</html>
