@@ -1,2 +1,2 @@
-# awesome-web-tools-2017
+# Awesome Web Tools 2017 ⚙️ 🛠
 The best and worst thing about being a web developer is that the web is constantly changing. While this is exciting it also means that web developers must always be proactive about learning new techniques or programming languages, adapting to changes, and be willing and eager to accept new challenges. This could include tasks such as adapting existing frameworks to meet business requirements, testing a website to identify technical problems, or optimizing and scaling a site to better perform with the back-end infrastructure.  We thought we would compile a comprehensive list of web development tools and resources that can help you be more productive, stay informed, and become a better developer.
