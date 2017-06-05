@@ -334,7 +334,7 @@ The last thing you probably need is another newsletter subscription. But these g
 # [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
 Hi there, good to see you here! Let's collect some awesome tools and resources together 👋 🙂
 
-1. Edit the README.md
+1. Edit the <a href="https://github.com/gauravmehla/developers-arsenal-2017/blob/master/README.md">README.md</a>
 2. Add your tool or resource
 3. Submit a pull request
 
