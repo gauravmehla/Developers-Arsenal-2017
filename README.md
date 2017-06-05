@@ -330,6 +330,9 @@ The last thing you probably need is another newsletter subscription. But these g
 - [Robomongo](https://robomongo.org/) : Native and cross-platform MongoDB management tool (Admin UI).
 - [Gitter](https://gitter.im/) : An instant messaging and chat room system for developers as well as GitHub users. Developer friendly with Markdown syntax support.
 
+# Resources 📕📔📘
+- [Websitehostingrating.com](https://www.websitehostingrating.com/top-100-web-development-resources/)
+- [Keycdn.com](https://www.keycdn.com/blog/web-development-tools/) , etc.
 
 # [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
 Hi there, good to see you here! Let's collect some awesome tools and resources together 👋 🙂
