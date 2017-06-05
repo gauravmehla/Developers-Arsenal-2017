@@ -334,12 +334,13 @@ The last thing you probably need is another newsletter subscription. But these g
 - [Websitehostingrating.com](https://www.websitehostingrating.com/top-100-web-development-resources/)
 - [Keycdn.com](https://www.keycdn.com/blog/web-development-tools/) , etc.
 
-# [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
+# [Contributing](https://github.com/gauravmehla/developers-arsenal-2017)
 Hi there, good to see you here! Let's collect some awesome tools and resources together 👋 🙂
 
-1. Edit the <a href="https://github.com/gauravmehla/developers-arsenal-2017/blob/master/README.md">README.md</a>
-2. Add your tool or resource
-3. Submit a pull request
+1. Fork this repo.
+2. Edit the <a href="https://github.com/gauravmehla/developers-arsenal-2017/blob/master/README.md">README.md</a>
+3. Add your tool or resource
+4. Submit a pull request
 
 ## Licence
 
