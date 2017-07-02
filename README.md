@@ -342,6 +342,13 @@ Hi there, good to see you here! Let's collect some awesome tools and resources t
 3. Add your tool or resource
 4. Submit a pull request
 
+## Oh, Thanks!
+
+By the way... thank you! And if you'd like to [say thanks](https://saythanks.io/to/gauravmehla)... :) 
+
+✨🍰✨
+
+
 ## Licence
 
 [![CC0 Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
