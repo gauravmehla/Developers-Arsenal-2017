@@ -329,6 +329,8 @@ The last thing you probably need is another newsletter subscription. But these g
 - [Postman](https://www.getpostman.com/) : Postman is the complete toolchain for API developers.
 - [Robomongo](https://robomongo.org/) : Native and cross-platform MongoDB management tool (Admin UI).
 - [Gitter](https://gitter.im/) : An instant messaging and chat room system for developers as well as GitHub users. Developer friendly with Markdown syntax support.
+* [Checkbot](https://www.checkbot.io/) : Browser extension that tests if your website follows 50+ SEO, speed and security best practices. Crawls your site checking multiple pages at once.
+
 
 # Resources 📕📔📘
 - [Websitehostingrating.com](https://www.websitehostingrating.com/top-100-web-development-resources/)
