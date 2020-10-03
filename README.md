@@ -71,6 +71,7 @@ Front-end frameworks usually consist of a package that is made up of other files
 
 A web framework (WF) or web application framework (WAF) is a software framework that is designed to support the development of web applications including web services, web resources, and web APIs. Web frameworks, provide a standard way to build and deploy web applications. Web frameworks aim to automate the overhead associated with common activities performed in web development.
 
+- [EmberJS](https://emberjs.com/) : EmberJS is an open-source JavaScript framework that helps developers be more productive out of the box. 
 - [VueJS](https://vuejs.org/)	: Vue.js is an open-source progressive JavaScript framework for building user interfaces.
 - [Ruby](https://www.ruby-lang.org/en/)	: Ruby on Rails is a web-application framework that includes everything needed to create database-backed web applications, with the MVC pattern.
 - [AngularJS](https://angularjs.org/)	: Lets you extend HTML vocabulary for your web application. AngularJS is a framework, even though it’s much more lightweight and sometime referred to as a library.
